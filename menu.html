@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/estilos.css">
+    <link rel="stylesheet" href="styles/carrusel.css">
+    <script src="https://kit.fontawesome.com/59c1bdd5c7.js" crossorigin="anonymous"></script>
+    <title>M&J</title>
+</head>
+<body>
+
+    <!--Menú de navegacino : es esa barra verde al inicio de la pagina-->
+    <nav>
+        <div class="menu-nav">
+            <div class="navG-1">
+                <img class="logo" src="img/logo.png">
+            </div>
+            <div class="navG-2">
+                <input class="search" placeholder="Buscar">
+                <button class="btn-search"><i class="fa-solid fa-magnifying-glass fa-xl" style="color: #fff;"></i></button>
+            </div>
+            <div class="navG-3" >
+                <div>
+                    <a class="link-1" href="index.html">Inicio</a>
+                </div>
+                <div>
+                    <a class="link-2" href="menu.html">Menú</a>
+                </div>
+                <div>
+                    <a  class="link-3" href="historia.html">Historia</a>
+                </div>
+                <div>
+                    <a class="link-4" href="contacto.html">Contacto</a>
+                </div>
+            </div>  
+        </div>
+    </nav>
+    
+    <article>
+        <div style="margin-bottom: 5rem;" class="contenido">
+            <div class="Results">
+                <div>
+                    <h2>5 Resultados en total...</h2>
+                </div>
+                <div>
+                    <button>x</button>
+                </div>
+            </div>
+            <!--menu 1-->
+            <div class="plato">
+                <div class="pl-izquierdo">
+                    <div class="plImagen">
+                        <img src="img/menu-1.jpg">
+                    </div>
+                    <div style="display: flex;flex-direction: column;padding: 15px;position: relative;bottom: 10px;">
+                        <h1>Bowl de quinoa y vegetales</h1>
+                        <p>Este bowl es una sinfonía de sabores y texturas. Con quinoa como base, conocida por ser un superalimento repleto de proteínas y aminoácidos esenciales, se le suman vegetales frescos y al vapor, aportando una variedad de colores y nutrientes.</p>
+                    </div>
+                </div>
+                <div class="pl-derecho">
+                    <div>
+                        <div>
+                            <i class="fa-sharp fa-solid fa-star" style="color: #fc9800;"></i>
+                            <i class="fa-sharp fa-solid fa-star" style="color: #fc9800;"></i>
+                            <i class="fa-sharp fa-solid fa-star" style="color: #fc9800;"></i>
+                            <i class="fa-sharp fa-solid fa-star" style="color: #fc9800;"></i>
+                            <i class="fa-sharp fa-solid fa-star" style="color: #fc9800;"></i>
+                            <i class="fa-sharp fa-solid fa-star" style="color: #fc9800;"></i>
+                            <i class="fa-solid fa-circle-check" style="color: #61b862;"></i>
+                        </div>
+                        <div>
+                            <h3 style="font-size: 15px;">2 reviews</h3>
+                        </div>
+                        
+                    </div>
+                    <div>
+                        <div>
+                            <button onclick="redirectBowl()" class="btn-llameYA">CONTACTE YA! <i class="fa-brands fa-whatsapp fa-lg" style="color: #ffffff;"></i> </button>
+                        </div>
+                        <div>
+                            <button class="btn-detalles">VER DETALLES</button>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            <!--menu 2-->
+            <div class="plato">
+                <div class="pl-izquierdo">
+                    <div class="plImagen">
+                        <img src="img/menu-2.jpg">
+                    </div>
+                    <div style="display: flex;flex-direction: column;padding: 15px;position: relative;bottom: 10px;">
+                        <h1>Wrap de pollo y verduras:</h1>
+                        <p>Este wrap es una opción perfecta para quienes buscan una comida deliciosa en movimiento. Hecho con una tortilla integral suave y llena de fibra, envuelve a la perfección las jugosas tiras de pollo asado.</p>
+                    </div>
+                </div>
+                <div class="pl-derecho">
+                    <div>
+                        <div>
+                            <i class="fa-sharp fa-solid fa-star" style="color: #fc9800;"></i>
+                            <i class="fa-sharp fa-solid fa-star" style="color: #fc9800;"></i>
+                            <i class="fa-sharp fa-solid fa-star" style="color: #fc9800;"></i>
+                            <i class="fa-sharp fa-solid fa-star" style="color: #fc9800;"></i>
+                            <i class="fa-sharp fa-solid fa-star" style="color: #fc9800;"></i>
+                            <i class="fa-sharp fa-solid fa-star" style="color: #fc9800;"></i>
+                            <i class="fa-solid fa-circle-check" style="color: #61b862;"></i>
+                        </div>
+                        <div>
+                            <h3 style="font-size: 15px;">5 reviews</h3>
+                        </div>
+                        
+                    </div>
+                    <div>
+                        <div>
+                            <button onclick="redirectWrap()" class="btn-llameYA">CONTACTE YA! <i class="fa-brands fa-whatsapp fa-lg" style="color: #ffffff;"></i> </button>
+                        </div>
+                        <div>
+                            <button class="btn-detalles">VER DETALLES</button>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+
+            </div>
+            <!--menu 3-->
+            <div class="plato">
+                <div class="pl-izquierdo">
+                    <div class="plImagen">
+                        <img src="img/menu-3.jpg">
+                    </div>
+                    <div style="display: flex;flex-direction: column;padding: 15px;position: relative;bottom: 10px;">
+                        <h1>Rollitos de verduras en papel de arroz</h1>
+                        <p>Un guiño a la cocina asiática, estos rollitos son una delicia fresca y crujiente. Envueltos en delicadas láminas de papel de arroz, contienen una mezcla colorida de verduras como pimientos, zanahorias y pepino, junto con fideos de arroz finos.</p>
+                    </div>
+                </div>
+                <div class="pl-derecho">
+                    <div>
+                        <div>
+                            <i class="fa-sharp fa-solid fa-star" style="color: #fc9800;"></i>
+                            <i class="fa-sharp fa-solid fa-star" style="color: #fc9800;"></i>
+                            <i class="fa-sharp fa-solid fa-star" style="color: #fc9800;"></i>
+                            <i class="fa-sharp fa-solid fa-star" style="color: #fc9800;"></i>
+                            <i class="fa-sharp fa-solid fa-star" style="color: #fc9800;"></i>
+                            <i class="fa-sharp fa-solid fa-star" style="color: #fc9800;"></i>
+                            <i class="fa-solid fa-circle-check" style="color: #61b862;"></i>
+                        </div>
+                        <div>
+                            <h3 style="font-size: 15px;">2 reviews</h3>
+                        </div>
+                        
+                    </div>
+                    <div>
+                        <div>
+                            <button onclick="redirectRollito()" class="btn-llameYA">CONTACTE YA! <i class="fa-brands fa-whatsapp fa-lg" style="color: #ffffff;"></i> </button>
+                        </div>
+                        <div>
+                            <button class="btn-detalles">VER DETALLES</button>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            <!--menu 4-->
+            <div class="plato">
+                <div class="pl-izquierdo">
+                    <div class="plImagen">
+                        <img src="img/menu-4.jpg">
+                    </div>
+                    <div style="display: flex;flex-direction: column;padding: 15px;position: relative;bottom: 10px;">
+                        <h1>Falafel con ensalada de tabulé</h1>
+                        <p>Un clásico del Medio Oriente, el falafel se compone de garbanzos y especias triturados, moldeados en pequeñas bolas y fritos hasta alcanzar una textura crujiente por fuera y tierna por dentro.</p>
+                    </div>
+                </div>
+                <div class="pl-derecho">
+                    <div>
+                        <div>
+                            <i class="fa-sharp fa-solid fa-star" style="color: #fc9800;"></i>
+                            <i class="fa-sharp fa-solid fa-star" style="color: #fc9800;"></i>
+                            <i class="fa-sharp fa-solid fa-star" style="color: #fc9800;"></i>
+                            <i class="fa-sharp fa-solid fa-star" style="color: #fc9800;"></i>
+                            <i class="fa-sharp fa-solid fa-star" style="color: #fc9800;"></i>
+                            <i class="fa-sharp fa-solid fa-star" style="color: #fc9800;"></i>
+                            <i class="fa-solid fa-circle-check" style="color: #61b862;"></i>
+                        </div>
+                        <div>
+                            <h3 style="font-size: 15px;">3 reviews</h3>
+                        </div>
+                        
+                    </div>
+                    <div>
+                        <div>
+                            <button onclick="redirectFalafel()" class="btn-llameYA">CONTACTE YA! <i class="fa-brands fa-whatsapp fa-lg" style="color: #ffffff;"></i> </button>
+                        </div>
+                        <div>
+                            <button class="btn-detalles">VER DETALLES</button>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            <!--menu 5-->
+            <div class="plato">
+                <div class="pl-izquierdo">
+                    <div class="plImagen">
+                        <img src="img/menu-5.jpg">
+                    </div>
+                    <div style="display: flex;flex-direction: column;padding: 15px;position: relative;bottom: 10px;">
+                        <h1>Tostadas de aguacate y huevo pochado</h1>
+                        <p>La simplicidad se encuentra con el sabor gourmet en este plato. Tostadas integrales crujientes sirven como base para aguacate triturado sazonado ligeramente con sal, pimienta y limón. Encima, un huevo pochado con una yema.</p>
+                    </div>
+                </div>
+                <div class="pl-derecho">
+                    <div>
+                        <div>
+                            <i class="fa-sharp fa-solid fa-star" style="color: #fc9800;"></i>
+                            <i class="fa-sharp fa-solid fa-star" style="color: #fc9800;"></i>
+                            <i class="fa-sharp fa-solid fa-star" style="color: #fc9800;"></i>
+                            <i class="fa-sharp fa-solid fa-star" style="color: #fc9800;"></i>
+                            <i class="fa-sharp fa-solid fa-star" style="color: #fc9800;"></i>
+                            <i class="fa-sharp fa-solid fa-star" style="color: #fc9800;"></i>
+                            <i class="fa-solid fa-circle-check" style="color: #61b862;"></i>
+                        </div>
+                        <div>
+                            <h3 style="font-size: 15px;">2 reviews</h3>
+                        </div>
+                        
+                    </div>
+                    <div>
+                        <div>
+                            <button onclick="redirectTostada()" class="btn-llameYA">CONTACTE YA! <i class="fa-brands fa-whatsapp fa-lg" style="color: #ffffff;"></i> </button>
+                        </div>
+                        <div>
+                            <button class="btn-detalles">VER DETALLES</button>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </article>
+    <footer>
+        <div class="ContentFooter">
+            <h3>© 2023 Copyright M&J  </h3>
+        </div>
+        
+    </footer>
+
+    <script src="js/contact.js"></script>
+</body>
+</html>
